@@ -1,0 +1,61 @@
+#intro {
+    margin-top: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#intro p {
+    margin-bottom: 75px;
+    line-height: 1.7em;
+    max-width: 750px;
+
+}
+
+#intro img {
+    height: 350px;
+    box-shadow: 25px 24px 0px 5px #937cae;
+    margin: 0px 25px;
+}
+
+.subsection p {
+    padding-top: 50px;
+}
+
+.station-list {
+    list-style: none;
+    margin: 0px 0px 50px -125px;
+    padding-top: 35px;
+
+}
+
+.station-list li {
+    margin: 35px 0px;
+    display: flex;
+}
+
+.station-list .icon {
+    display: flex;
+    align-self: center;
+}
+
+.station-list .fa-solid {
+    color: #3b2554;
+    font-size: 2.25rem;
+    width: 85px;
+}
+
+.station {
+    display: inline-block;
+}
+
+.station h3,
+.station p {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+}
+
+.station p {
+    font-size: 1rem;
+}
