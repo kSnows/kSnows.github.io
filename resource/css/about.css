@@ -1,25 +1,7 @@
-#intro {
-    margin-top: 0px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-#intro p {
-    margin-bottom: 75px;
-    line-height: 1.7em;
-    max-width: 750px;
-
-}
-
 #intro img {
     height: 350px;
-    box-shadow: 25px 24px 0px 5px #937cae;
+    box-shadow: 25px 24px 0px 5px var(--pale-purple);
     margin: 0px 25px;
-}
-
-.subsection p {
-    padding-top: 50px;
 }
 
 .station-list {
@@ -40,7 +22,7 @@
 }
 
 .station-list .fa-solid {
-    color: #3b2554;
+    color: var(--dark-purple);
     font-size: 2.25rem;
     width: 85px;
 }
