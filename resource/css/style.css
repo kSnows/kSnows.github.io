@@ -51,6 +51,10 @@ a {
     font-weight: bolder;
 }
 
+strong {
+    color: var(--accent-purple);
+}
+
 #logo {
     background-color: var(--dark-purple);
     position: fixed;
@@ -100,6 +104,8 @@ nav {
 
 nav ul {
     padding-inline-start: 25px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 nav li,
@@ -115,7 +121,8 @@ nav li a {
 }
 
 nav li a:hover {
-    text-decoration: solid underline var(--accent-cyan);
+    text-decoration: solid underline var(--accent-cyan) 2px;
+    width: 150%;
 }
 
 main {
@@ -124,17 +131,20 @@ main {
 
 h1 {
     font-family: Quicksand, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
     margin: 0px 0px 50px;
 }
 
 h2 {
     font-family: Quicksand;
     font-size: 1.5rem;
+    font-weight: bold;
     position: absolute;
     left: 0px;
     right: 0px;
     margin: 0px;
-    padding: 2px 0px 2px 160px;
+    padding: 5px 0px 5px 160px;
     text-transform: uppercase;
     background-color: var(--transp-purple);
     color: (--dark-purple);
@@ -195,5 +205,7 @@ footer ul {
 }
 
 .subsection p {
-    padding-top: 50px;
+    position: relative;
+    top: 50px;
+    padding-bottom: 50px;
 }

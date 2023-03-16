@@ -21,9 +21,8 @@ body {
     padding: 1% 10%;
     border: var(--light-purple) solid 1px;
     font-size: 7rem;
-    background-color: var(--pale-purple);
-    color: var(--deep-purple);
-    text-shadow: 0px -2px 9px var(--light-purple);
+    background-color: rgba(220, 220, 220, 0.748);
+    color: var(--dark-purple);
 }
 
 /* strong {
@@ -41,4 +40,10 @@ body {
     letter-spacing: .5em;
     position: relative;
     top: 100%;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;    
 }
