@@ -4,11 +4,11 @@
     margin: 0px 25px;
 }
 
-.station-list {
-    list-style: none;
+.station-list{
     margin: 0px 0px 50px -125px;
     padding-top: 35px;
-    max-width: 70vw;
+    padding-inline-start: 40px;
+    max-width: 1280px;
 }
 
 .station-list li {
@@ -29,6 +29,15 @@
 
 .station {
     display: inline-block;
+}
+
+.station h3{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .station h3,
