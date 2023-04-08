@@ -1,13 +1,10 @@
 #intro img {
     height: 350px;
-    box-shadow: 25px 24px 0px 5px var(--pale-purple);
-    margin: 0px 25px;
 }
 
-.station-list{
-    margin: 0px 0px 50px -125px;
-    padding-top: 35px;
-    padding-inline-start: 40px;
+.station-list {
+    margin-left: -85px;
+    padding: 35px 0px 25px 0px;
     max-width: 1280px;
 }
 
@@ -17,37 +14,25 @@
 }
 
 .station-list .icon {
-    display: flex;
     align-self: center;
 }
 
 .station-list .fa-solid {
     color: var(--dark-purple);
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     width: 85px;
 }
 
-.station {
-    display: inline-block;
-}
-
-.station h3{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.station h3 {
+    line-height: 1.5;
 }
 
 .station h3,
 .station p {
     position: inherit;
-    margin: 0px;
-    padding: 0px;
-    line-height: 1.5;
 }
 
 .station p {
-    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
 }

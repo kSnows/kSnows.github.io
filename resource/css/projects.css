@@ -1,68 +1,15 @@
-* {
-    box-sizing: border-box;
-}
-
 #intro img {
     height: 200px;
-    box-shadow: 10px 10px 0px 2px var(--pale-purple);
-    margin: 0px 25px;
-}
-
-.subsection p {
-    font-size: 1.15rem;
-    line-height: 1.5;
-    margin-bottom: 35px;
-    max-width: 50vw;
 }
 
 .subsection .container {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .subsection img {
-    width: 200px;
     height: 200px;
+    width: auto;
     margin: 5px;
-}
-
-/* check if neccessary: */
-
-.station-list {
-    list-style: none;
-    margin: 0px 0px 50px -125px;
-    padding-top: 35px;
-}
-
-.station-list li {
-    margin: 35px 0px;
-    display: flex;
-}
-
-.station-list .icon {
-    display: flex;
-    align-self: center;
-}
-
-.station-list .fa-solid {
-    color: var(--dark-purple);
-    font-size: 2.25rem;
-    width: 85px;
-}
-
-.station {
-    display: inline-block;
-}
-
-.station h3,
-.station p {
-    margin: 0px;
-    padding: 0px;
-    line-height: 1.5;
-}
-
-.station p {
-    font-size: 1rem;
 }

@@ -3,47 +3,41 @@ body {
 }
 
 #splash {
-    margin: -95px -160px 25px -160px;
+    margin: -42px -160px 0px -160px;
     background-image: url('https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e');
     background-color: var(--main-bg-color);
     background-blend-mode: luminosity;
     background-size: cover;
-    height: 75%;
+    height: 85%;
 }
 
 #splash h1 {
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 0;
-    transform: translateY(-50%);
-    text-align: right;
-    font-family: 'Indie Flower';
-    padding: 1% 10%;
-    border: var(--light-purple) solid 1px;
-    font-size: 7rem;
-    background-color: rgba(220, 220, 220, 0.748);
     color: var(--dark-purple);
+    background-color: rgba(226, 224, 241, 0.823);
+    font-family: 'Indie Flower';
+    font-style: italic;
+    text-transform: none;
+    padding: 25px 15px 15px 25px;
+    font-size: 7.5rem;
+    font-weight: 600;
 }
-
-/* strong {
-    color: var(--accent-cyan);
-} */
 
 #splash h2 {
+    position: relative;
+    top: 75%;
     background-color: var(--light-cyan);
-    color: var(--dark-purple);
-    font-family: 'Comfortaa';
+    font-family: 'Fira Code';
     padding: 25px;
     text-align: center;
-    font-size: 1.75rem;
     text-transform: none;
     letter-spacing: .5em;
-    position: relative;
-    top: 100%;
 }
 
-footer{
+footer {
     position: fixed;
     width: 100%;
-    bottom: 0;    
+    bottom: 0;
 }
