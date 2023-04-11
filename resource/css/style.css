@@ -119,8 +119,17 @@ nav li a:hover {
     text-decoration: solid underline var(--accent-cyan) 2px;
 }
 
+#mobile {
+    display: none;
+}
+
+#mobile .fa-solid {
+    color: var(--light-purple);
+    font-size: 1.5em;
+}
+
 main {
-    margin: 95px 160px 0px 160px;
+    margin: 95px 160px 50px 160px;
 }
 
 h1 {
@@ -157,22 +166,24 @@ h3 {
 #intro p {
     line-height: 1.75em;
     margin-bottom: 75px;
+    max-width: 750px;
 }
 
 #intro img {
     box-shadow: 15px 15px 0px 5px var(--pale-purple);
-    margin: 15px 25px;
+    margin: 15px 50px;
 }
 
 .subsection p {
     position: relative;
     top: 50px;
     padding-bottom: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     line-height: 1.5;
+    max-width: 1000px;
 }
 
-footer {
+footer ul {
     display: flex;
     background-color: var(--dark-purple);
     border-top: solid var(--light-purple) 1px;
@@ -200,3 +211,98 @@ footer li {
     var(--transp-cyan) 25%,
     var(--transp-cyan, 0.5) 100%);
  */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    main {
+        margin-right: 50px;
+    }
+
+    footer li {
+        font-size: .9rem;
+    }
+
+    #intro img {
+        box-shadow: 10px 10px 0px 2px var(--pale-purple);
+        margin: 15px 25px;
+    }
+
+    h1 {
+        font-size: 1.25em;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    main {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #logo {
+        rotate: 0deg;
+        top: 0px;
+        height: 64.4px;
+        width: 64.4px;
+        border-radius: 0;
+    }
+
+    #logo img {
+        top: -5px;
+        left: -5px;
+        rotate: 0deg;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav {
+        background: var(--medium-purple);
+        opacity: 1;
+        padding-left: 50px;
+    }
+
+    nav li {
+        margin: 0px 10px;
+    }
+
+    #intro {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 25px;
+    }
+
+    #intro p {
+        margin-bottom: 0px;
+    }
+
+    #intro img {
+        height: 50vw;
+        box-shadow: none;
+    }
+
+    h2{
+        padding-left: 25px;
+    }
+
+    footer ul {
+        height: 50px;
+    }
+}
