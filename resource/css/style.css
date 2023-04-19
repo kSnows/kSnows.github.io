@@ -1,4 +1,4 @@
-/* overall styling */
+/* color-variables */
 :root {
     --main-bg-color: #d1d2eb;
     --main-fg-color: #120f24;
@@ -16,11 +16,7 @@
     --accent-cyan: #74ead6;
 }
 
-* {
-    box-sizing: border-box;
-    color: var(--main-fg-color);
-}
-
+/* fonts */
 @font-face {
     font-family: Quicksand;
     src: url('../font/Quicksand-VariableFont_wght.ttf');
@@ -36,6 +32,13 @@
     src: url('../font/FiraCode-VariableFont_wght.ttf');
 }
 
+
+/* general-selectors */
+* {
+    box-sizing: border-box;
+    color: var(--main-fg-color);
+}
+
 body {
     font-size: 1.15rem;
     font-weight: 500;
@@ -45,6 +48,16 @@ body {
     background-position: top;
     background-size: cover;
     background-blend-mode: color-dodge;
+}
+
+main {
+    margin: 95px 160px 50px 160px;
+}
+
+section {
+    margin-top: -95px;
+    padding-top: 95px;
+    margin-bottom: 250px
 }
 
 a,
@@ -57,6 +70,64 @@ p a:hover {
     color: var(--accent-cyan);
 }
 
+h1 {
+    font-family: Quicksand, sans-serif;
+    text-transform: lowercase;
+    font-size: 1.75em;
+    font-weight: 700;
+    margin: 15px 0px 25px;
+}
+
+h2 {
+    font-family: Quicksand, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: var(--light-cyan);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding: 5px 0px 5px 160px;
+}
+
+h3 {
+    font-family: Quicksand, sans-serif;
+    color: var(--dark-purple);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.intro p {
+    line-height: 1.75em;
+    margin-bottom: 75px;
+    max-width: 750px;
+}
+
+.intro img {
+    box-shadow: 15px 15px 0px 5px var(--pale-purple);
+    margin: 15px 50px 50px 50px;
+}
+
+.content p {
+    position: relative;
+    top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    max-width: 1000px;
+}
+
+.fa-brands,
+.fa-solid {
+    color: var(--dark-purple);
+}
+
+/* navigation-elements */
 #logo {
     background-color: var(--medium-purple);
     position: fixed;
@@ -100,8 +171,7 @@ nav ul {
     margin-block-end: 1em;
 }
 
-nav li,
-footer li {
+nav li {
     font-family: 'Fira Code';
     font-weight: lighter;
     display: inline-block;
@@ -128,61 +198,276 @@ nav li a:hover {
     font-size: 1.5em;
 }
 
-main {
-    margin: 95px 160px 50px 160px;
+/* start-part */
+#start {
+    margin: -42px -160px 150px -160px;
+    background-image: url('https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e');
+    background-color: var(--main-bg-color);
+    background-blend-mode: luminosity;
+    background-size: cover;
+    height: 95%;
 }
 
-h1 {
-    font-family: Quicksand, sans-serif;
-    text-transform: lowercase;
-    font-size: 1.5em;
-    margin: 15px 0px 25px;
-}
-
-h2 {
-    font-family: Quicksand, sans-serif;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    background-color: var(--light-cyan);
+#start h1 {
     position: absolute;
-    left: 0px;
-    right: 0px;
-    padding: 5px 0px 5px 160px;
-}
-
-h3 {
-    font-family: Quicksand, sans-serif;
+    top: 35%;
+    right: 0;
     color: var(--dark-purple);
-    font-size: 1.25rem;
+    background-color: rgba(226, 224, 241, 0.823);
+    font-family: 'Indie Flower';
+    font-style: italic;
+    text-transform: none;
+    padding: 25px 15px 15px 25px;
+    font-size: 7.5rem;
     font-weight: 600;
 }
 
-#intro {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-#intro p {
-    line-height: 1.75em;
-    margin-bottom: 75px;
-    max-width: 750px;
-}
-
-#intro img {
-    box-shadow: 15px 15px 0px 5px var(--pale-purple);
-    margin: 15px 50px;
-}
-
-.subsection p {
+#start h2 {
     position: relative;
-    top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 25px;
-    line-height: 1.5;
-    max-width: 1000px;
+    top: 75%;
+    background-color: var(--light-cyan);
+    font-family: 'Fira Code';
+    padding: 25px;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: .5em;
 }
 
+/* start-media-quieries */
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    #start {
+        margin-right: -50px;
+    }
+
+    #start h1 {
+        font-size: 6rem;
+    }
+
+    #start h2 {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    #start {
+        margin: -48px -25px 50px -160px;
+    }
+
+    #start h1 {
+        font-size: 25vw;
+        font-weight: 500;
+    }
+
+    #start h2 {
+        display: none;
+    }
+
+}
+
+/* about-part */
+#about .intro img {
+    height: 350px;
+}
+
+.station-list {
+    margin-left: -85px;
+    margin-bottom: 50px;
+    padding: 35px 0px 0px 0px;
+    max-width: 1280px;
+}
+
+.station-list li {
+    margin: 35px 0px;
+    display: flex;
+}
+
+.station-list .icon {
+    align-self: center;
+}
+
+.station-list .fa-solid {
+    font-size: 2.5rem;
+    width: 85px;
+}
+
+.station h3 {
+    line-height: 1.5;
+}
+
+.station h3,
+.station p {
+    position: inherit;
+}
+
+.station p {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* about-media-quieres */
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    #about .intro img {
+        height: 250px;
+    }
+
+    .station-list li {
+        margin: 25px 0px;
+        display: flex;
+    }
+
+    .station-list .fa-solid {
+        font-size: 2.25rem;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    #about .intro img {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+}
+
+/* project-part */
+#projects .intro img {
+    height: 200px;
+}
+
+.content .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.content img {
+    height: 200px;
+    width: auto;
+    margin: 5px;
+}
+
+/* project-media-quieries */
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    #projects .intro img {
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .content .container {
+        justify-content: center;
+    }
+
+    .content img {
+        width: 85%;
+        height: auto;
+    }
+
+}
+
+/* skills-part */
+#skills .intro img {
+    height: 200px;
+}
+
+.content .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#skills .fa-brands {
+    font-size: 2.5em;
+    width: 75px;
+}
+
+/* skills-media-quieres */
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    #skills .intro img {
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .content .container {
+        justify-content: flex-start;
+    }
+
+}
+
+/* contact-part */
+#contact .intro img {
+    height: 300px;
+}
+
+#contact-icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.fa-brands,
+.fa-solid {
+    font-size: 3em;
+}
+
+#contact {
+    margin-bottom: 185px
+}
+
+/* contact-media-quieres */
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    #contact {
+        margin-bottom: 100px;
+    }
+
+    #contact .intro img {
+        height: 250px;
+    }
+
+    .fa-brands,
+    .fa-solid {
+        font-size: 2.5em;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    #contact {
+        margin-bottom: -50px;
+    }
+
+    #contact .intro img {
+        height: 35vw;
+    }
+
+    #contact-icons {
+        margin-top: 25px;
+        max-width: none;
+    }
+
+    .fa-brands,
+    .fa-solid {
+        font-size: 2.5em;
+    }
+
+
+}
+
+/* footer-elements */
 footer ul {
     display: flex;
     background-color: var(--dark-purple);
@@ -193,12 +478,16 @@ footer ul {
 }
 
 footer li {
-    color: var(--main-bg-color);
+    font-family: 'Fira Code';
+    font-weight: lighter;
     font-size: 1rem;
+    color: var(--main-bg-color);
+    display: inline-block;
+    margin: 3.5px 25px;
 }
 
 /* experimental 
- #intro {
+ .intro {
     background-color:var(--light-cyan);
     opacity: .95;
     border-radius: 15px;
@@ -212,6 +501,7 @@ footer li {
     var(--transp-cyan, 0.5) 100%);
  */
 
+/*  media-quieries */
 @media screen and (min-width:768px) and (max-width:1023px) {
 
     main {
@@ -222,7 +512,7 @@ footer li {
         font-size: .9rem;
     }
 
-    #intro img {
+    .intro img {
         box-shadow: 10px 10px 0px 2px var(--pale-purple);
         margin: 15px 25px;
     }
@@ -247,6 +537,10 @@ footer li {
     main {
         margin-left: 25px;
         margin-right: 25px;
+    }
+
+    section {
+        margin-bottom: 125px;
     }
 
     #logo {
@@ -283,22 +577,22 @@ footer li {
         margin: 0px 10px;
     }
 
-    #intro {
+    .intro {
         flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 25px;
     }
 
-    #intro p {
+    .intro p {
         margin-bottom: 0px;
     }
 
-    #intro img {
+    .intro img {
         height: 50vw;
         box-shadow: none;
     }
 
-    h2{
+    h2 {
         padding-left: 25px;
     }
 
