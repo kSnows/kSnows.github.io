@@ -55,7 +55,9 @@ main {
 }
 
 section {
-    margin-bottom: 250px;
+    margin-top: -95px;
+    padding-top: 95px;
+    margin-bottom: 250px
 }
 
 a,
@@ -71,7 +73,8 @@ p a:hover {
 h1 {
     font-family: Quicksand, sans-serif;
     text-transform: lowercase;
-    font-size: 1.5em;
+    font-size: 1.75em;
+    font-weight: 700;
     margin: 15px 0px 25px;
 }
 
@@ -417,6 +420,10 @@ nav li a:hover {
 .fa-brands,
 .fa-solid {
     font-size: 3em;
+}
+
+#contact {
+    margin-bottom: 185px
 }
 
 /* contact-media-quieres */
