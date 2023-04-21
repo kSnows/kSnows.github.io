@@ -45,9 +45,9 @@ body {
     font-family: Quicksand, sans-serif;
     background-color: var(--main-bg-color);
     background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b);
-    background-position: center;
+    background-position: top;
+    background-size: cover;
     background-blend-mode: color-dodge;
-    background-attachment: fixed;
 }
 
 main {
@@ -75,10 +75,7 @@ h1 {
     text-transform: lowercase;
     font-size: 1.75em;
     font-weight: 700;
-    margin: 15px 0px 75px;
-    position: sticky;
-    top: 125px;
-    z-index: 3;
+    margin: 15px 0px 25px;
 }
 
 h2 {
@@ -162,7 +159,7 @@ nav {
     padding-left: 110px;
     top: 0px;
     width: 100%;
-    z-index: 4;
+    z-index: 3;
     background: var(--pale-purple);
     opacity: .97;
     border-bottom: 1px solid var(--medium-purple);
@@ -209,7 +206,6 @@ nav li a:hover {
     background-blend-mode: luminosity;
     background-size: cover;
     height: 95%;
-    background-attachment: fixed;
 }
 
 #start h1 {
