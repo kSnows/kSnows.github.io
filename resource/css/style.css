@@ -535,17 +535,17 @@ nav li a:hover {
 #skillmap .tooltip {
     position: absolute;
     max-width: 50vw;
-    ;
     border-radius: 5px;
     border: 2px solid rgba(132, 255, 237, 0.75);
     background: rgba(40, 37, 102, 0.75);
     font-size: 20px;
     padding: 25px;
-    /* display: none; */
+    display: none;
 }
 
 #skillmap .tooltip.selected {
-    display: block
+    display: block;
+    transform: translate(0px, 7600px)
 }
 
 #skillmap .selected circle,
